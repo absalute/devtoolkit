@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "devtoolkit",
+  "version": "${version}",
+
+  "name": "Developer's toolkit",
+  "description": "",
+  "authors": [
+    "AbSalute"
+  ],
+  "contact": {
+    "homepage": "https://www.planetminecraft.com/mod/devtoolkit/",
+    "sources": "https://github.com/absalute/devtoolkit",
+    "issues": "https://github.com/absalute/devtoolkit/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/devtoolkit/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.absalute.devtoolkit.DevToolkit"
+    ],
+    "modmenu": [
+      "com.absalute.devtoolkit.config.ModMenuEntry"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.10.0",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+  "custom": {
+    "modmenu:clientsideOnly": true
+  }
+}
