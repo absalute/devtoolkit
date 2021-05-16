@@ -122,8 +122,6 @@ public final class MoreTooltips {
     private static void addTooltip(List<Text> tooltip, int position, Text text) {
         int size = tooltip.size();
         if (size < position) for (int i = 0, end = position - size; i <= end; i++) tooltip.add(null);
-//        if (tooltip.get(position) == null) tooltip.set(position, text);
-//        else tooltip.add(position, text);
         tooltip.add(position, text);
     }
 
