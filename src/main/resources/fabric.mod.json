@@ -27,6 +27,7 @@
     ]
   },
   "mixins": [
+    "devtoolkit.mixins.json"
   ],
 
   "depends": {
@@ -36,8 +37,5 @@
   },
   "suggests": {
     "modmenu": "*"
-  },
-  "custom": {
-    "modmenu:clientsideOnly": true
   }
 }

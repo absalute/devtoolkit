@@ -1,8 +1,8 @@
 package com.greentea.devtoolkit;
 
-import com.greentea.devtoolkit.config.ModConfig;
-import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
-import me.sargunvohra.mcmods.autoconfig1u.serializer.GsonConfigSerializer;
+import com.greentea.devtoolkit.config.DevToolkitConfig;
+import com.greentea.devtoolkit.config.DevToolkitConfigManager;
+import com.greentea.devtoolkit.moretooltips.MoreTooltips;
 import net.fabricmc.api.ClientModInitializer;
 
 public class DevToolkit implements ClientModInitializer {
@@ -10,8 +10,7 @@ public class DevToolkit implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		AutoConfig.register(ModConfig.class, GsonConfigSerializer::new);
-		ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
-		AdvancedTooltips.init(config.advancedTooltips);
+        DevToolkitConfig config = DevToolkitConfigManager.loadConfig();
+        MoreTooltips.init(config.getMoreTooltips());
 	}
 }
