@@ -67,5 +67,13 @@
   "tooltip.devtoolkit.moreTooltips.snack": "Snack",
   "tooltip.devtoolkit.moreTooltips.notSnack": "Not snack",
   "tooltip.devtoolkit.moreTooltips.nbt": "NBT:",
-  "tooltip.devtoolkit.moreTooltips.emptyNbt": "No NBT"
+  "tooltip.devtoolkit.moreTooltips.emptyNbt": "No NBT",
+
+  "devtoolkit.mceditor.gui.openEditor": "Open McEditor",
+  "devtoolkit.mceditor.gui.title": "McEditor",
+  "devtoolkit.mceditor.gui.title.fileOpened": "%s - McEditor",
+  "devtoolkit.mceditor.gui.title.fileOpened.modified": "%s* - McEditor",
+  "devtoolkit.mceditor.gui.test": "Test button",
+  "key.devtoolkit.mceditor.openEditor": "Open McEditor",
+  "category.devtoolkit.mceditor.general": "McEditor"
 }
